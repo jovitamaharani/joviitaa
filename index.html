@@ -843,7 +843,8 @@
               <!-- Reply Messages End -->
 
               <!-- Contact Form Start -->
-              <form class="form contact-form" id="contact-form" action="https://formsubmit.co/jovitamaharani321@gmail.com" method="POST">
+              <form class="form contact-form" id="contact-form" action="https://formspree.io/f/xanojqgo"
+              method="POST">
                 <!-- Hidden Required Fields -->
                 <input type="hidden" name="project_name" value="Starter Template">
                 <input type="hidden" name="admin_email" value="support@mixdesign.club">
@@ -851,23 +852,22 @@
                 <!-- END Hidden Required Fields-->
                 <div class="container-fluid p-0">
                   <div class="row gx-0">
-                    <div class="col-12 col-md-6 form__item animate-in-up">
+                    <!-- <div class="col-12 col-md-6 form__item animate-in-up">
                       <input type="text" name="Name" placeholder="Your Name*" required>
-                    </div>
-                    <div class="col-12 col-md-6 form__item animate-in-up">
+                    </div> -->
+                    <!-- <div class="col-12 col-md-6 form__item animate-in-up">
                       <input type="text" name="Company" placeholder="Company Name">
-                    </div>
+                    </div> -->
                     <div class="col-12 col-md-6 form__item animate-in-up">
-                      <input type="email" name="E-mail" placeholder="Email Adress*" required>
+                      <input type="email" name="email" placeholder="Email Adress*" required>
                     </div>
-                    <div class="col-12 col-md-6 form__item animate-in-up">
+                    <!-- <div class="col-12 col-md-6 form__item animate-in-up">
                       <input type="tel" name="Phone" placeholder="Phone Number*" required>
+                    </div> -->
+                    <div class="col-12 form__item animate-in-up">
+                      <textarea name="message" placeholder="A Few Words*" required></textarea>
                     </div>
                     <div class="col-12 form__item animate-in-up">
-                      <textarea name="Message" placeholder="A Few Words*" required></textarea>
-                    </div>
-                    <div class="col-12 form__item animate-in-up">
-                      <!-- <input type="submit" value="Kirim"> -->
                       <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
                         <span class="btn-caption">Send Message</span>
                         <i class="ph-bold ph-paper-plane-tilt"></i>
@@ -1099,29 +1099,6 @@
     
   </body>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("gMP9JOu4gsTfSey-C"); // Ganti dengan public key kamu
-  })();
-</script>
-
-<script>
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault(); // Hindari reload
-
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
-      .then(function() {
-        // Tampilkan pesan sukses (kamu sudah punya <div class="form__reply">)
-        document.querySelector(".form__reply").style.display = "block";
-        document.getElementById("contact-form").reset();
-      }, function(error) {
-        alert("Gagal mengirim pesan. Silakan coba lagi.");
-        console.log(error);
-      });
-  });
-</script>
 
 <!-- Mirrored from mixdesign.club/themeforest/braxton/index-gradient.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jul 2024 07:47:41 GMT -->
 </html>
