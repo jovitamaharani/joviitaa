@@ -843,7 +843,7 @@
               <!-- Reply Messages End -->
 
               <!-- Contact Form Start -->
-              <form class="form contact-form" id="contact-form">
+              <form class="form contact-form" id="contact-form" action="mailto:kamu@example.com" method="post" enctype="text/plain">
                 <!-- Hidden Required Fields -->
                 <input type="hidden" name="project_name" value="Starter Template">
                 <input type="hidden" name="admin_email" value="support@mixdesign.club">
@@ -867,6 +867,7 @@
                       <textarea name="Message" placeholder="A Few Words*" required></textarea>
                     </div>
                     <div class="col-12 form__item animate-in-up">
+                      <!-- <input type="submit" value="Kirim"> -->
                       <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
                         <span class="btn-caption">Send Message</span>
                         <i class="ph-bold ph-paper-plane-tilt"></i>
